@@ -65,5 +65,5 @@ a variável usando a palavra reservada var.
 Linha{5}, pelo motivo anterior, essa linha exibirá local(pois alteramos o 
 valor da variável em myOtherFunction).
 SEMPRE que possível evitar um número elevado de variáveis globais.*/
-
+testando
 
