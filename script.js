@@ -35,7 +35,7 @@ o conteúdo da variável caso ela seja um objeto.*/
 /* O escopo se refere ao local em que podemos acessar a variável no 
 algoritmo (também pode ser em uma função quando trabalhamos com 
 escopos de função). As variáveis podem ser locais ou globais.*/
-
+/*
 var myVariable = 'global';
 myOtherVariable = 'global';
 function myFunction() {
@@ -51,7 +51,7 @@ console.log(myFunction()); //{2}
 console.log(myOtherVariable); //{3}
 console.log(myOtherFunction()); //{4}
 console.log(myOtherVariable); //{5}
-
+*/
 /* O código anterior pode ser explicado assim:
 Linha{1}, exibirá global porque estamos referenciando uma variável global.
 Linha{2}, exibirá local porque declaramos a variável myVariable dentro
