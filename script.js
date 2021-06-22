@@ -73,7 +73,7 @@ de programação. JavaScript também possui operadores aritméticos de
 atribuição, de comparação, lógicos, bit a bit(bitwise) e unários.
 Alguns exemplos:
 */
-
+/*
 var num = 0; //{1}
 num = num + 2;
 num = num * 3;
@@ -95,5 +95,25 @@ console.log('num <= 1 : ' + (num <= 1));
 console.log('true && false : ' + (true && false)); // {4}
 console.log('true || false : ' + (true || false));
 console.log('!true : ' + (!true));
+*/
+/* Na linha {1}, temos os operadores aritméticos:
+    Operador      | Descrição
+    +               soma
+    -               subtração
+    *               multiplicação
+    /               divisão 
+    %               módulo (resto de uma operação de divisão)
+    ++              incremento
+    --              decremento
+*/
+/* Na linha {2}, temos os operadores de atribuição:
+Operador de atribuição |        Descrição
+    =                       Atribuição
+    +=                      Atribuição de soma(x += y)==(x = x + y)
+    -=                      Atribuição de subtração(x -= y)==(x = x - y)
+    *=                      Atribuição de multiplicação(x *= y)==(x = x * y)
+    /=                      Atribuição de divisão(x /= y)==(x = x / y)
+    %=                      Atribuição de resto(x %= y)== (x = x % y)
+*/
 
 
