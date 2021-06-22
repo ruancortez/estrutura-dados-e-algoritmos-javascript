@@ -65,5 +65,35 @@ a variável usando a palavra reservada var.
 Linha{5}, pelo motivo anterior, essa linha exibirá local(pois alteramos o 
 valor da variável em myOtherFunction).
 SEMPRE que possível evitar um número elevado de variáveis globais.*/
-testando
+
+// OPERADORES
+
+/* São necessários quando realizamos qualquer operação em uma linguagem 
+de programação. JavaScript também possui operadores aritméticos de 
+atribuição, de comparação, lógicos, bit a bit(bitwise) e unários.
+Alguns exemplos:
+*/
+
+var num = 0; //{1}
+num = num + 2;
+num = num * 3;
+num = num / 2;
+num++;
+num--;
+num += 1; //{2}
+num -= 2;
+num *= 3;
+num /= 2;
+num %= 3;
+console.log('num == 1 : ' + (num == 1)); //{3}
+console.log('num === 1 : ' + (num === 1));
+console.log('num != 1 : ' + (num != 1));
+console.log('num > 1 : ' + (num > 1));
+console.log('num < 1 : ' + (num < 1));
+console.log('num >= 1 : ' + (num >= 1));
+console.log('num <= 1 : ' + (num <= 1));
+console.log('true && false : ' + (true && false)); // {4}
+console.log('true || false : ' + (true || false));
+console.log('!true : ' + (!true));
+
 
