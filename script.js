@@ -98,13 +98,13 @@ console.log('!true : ' + (!true));
 */
 /* Na linha {1}, temos os operadores aritméticos:
     Operador      | Descrição
-    +               soma
-    -               subtração
-    *               multiplicação
-    /               divisão 
-    %               módulo (resto de uma operação de divisão)
-    ++              incremento
-    --              decremento
+    +               Soma
+    -               Subtração
+    *               Multiplicação
+    /               Divisão 
+    %               Módulo (resto de uma operação de divisão)
+    ++              Incremento
+    --              Decremento
 */
 /* Na linha {2}, temos os operadores de atribuição:
 Operador de atribuição |        Descrição
@@ -115,5 +115,19 @@ Operador de atribuição |        Descrição
     /=                      Atribuição de divisão(x /= y)==(x = x / y)
     %=                      Atribuição de resto(x %= y)== (x = x % y)
 */
-
-
+/* Na linha {3}, temos os operadores de comparação:
+Operador de comparação |        Descrição
+    ==                      Igual a
+    ===                     Igual a (tanto o valor quanto o tipo de objeto)
+    !=                      Diferente de    
+    >                       Maior que
+    >=                      Maior ou igual a
+    <                       Menor que
+    <=                      Menor ou igual a 
+*/
+/* Na linha {4}, temos os operadores lógicos:
+Operador lógico         |       Descrição
+    &&                              E       
+    ||                              Ou
+    !                               Negação
+*/
