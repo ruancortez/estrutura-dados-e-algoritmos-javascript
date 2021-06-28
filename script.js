@@ -187,3 +187,22 @@ avaliada como true. Vamos observar a tabela:
     Object                      true
 
 Vamos observar alguns exemplos: */
+function testTruthy(val) {
+    return val ? console.log('trusthy') : console.log('falsy');
+}
+testTruthy(true); // true
+testTruthy(false); // false
+testTruthy(new Boolean(false)); // true (objeto é sempre true)
+testTruthy(''); // true
+testTruthy('Packt'); // false
+testTruthy(new String('')); // true (objeto é sempre true)
+testTruthy(1); // true
+testTruthy(-1); // true
+testTruthy(NaN); // false
+testTruthy(new Number(NaN)); // true (objeto é sempre true)
+testTruthy({}); // true (objeto é sempre true)
+var obj = { name: 'John' };
+testTruthy(obj); // true
+testTruthy(obj.name); // true
+testTruthy(obj.age); // age (propriedade não existe)
+
