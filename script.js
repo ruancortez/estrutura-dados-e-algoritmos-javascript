@@ -172,3 +172,18 @@ delete myObj.age;
 console.log(myObj); // exibe Object {name: "John"}
 */
 // Nos algoritmos deste livro, serão apresentados alguns destes operadores.
+/*
+Verdadeiro e falso:
+Na maioria das linguagens os valores booleanos true e false representam
+os resultados verdadeiro/falso. Em JavaScript, uma string como Packt é
+avaliada como true. Vamos observar a tabela:
+
+    Tipo de valor       |       Resultado
+    undefined                   false
+    null                        false
+    Boolean                 Verdadeiro é true e falso é false
+    Number                O resultado é false para +0, -0 ou NaN; caso contrário, é true
+    String                O resultado é false se a string for vazia(o tamanho é 0); caso contrário, é true(tamanho >= 1)  
+    Object                      true
+
+Vamos observar alguns exemplos: */
