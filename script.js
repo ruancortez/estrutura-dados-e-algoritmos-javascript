@@ -187,6 +187,7 @@ avaliada como true. Vamos observar a tabela:
     Object                      true
 
 Vamos observar alguns exemplos: */
+/*
 function testTruthy(val) {
     return val ? console.log('trusthy') : console.log('falsy');
 }
@@ -205,4 +206,14 @@ var obj = { name: 'John' };
 testTruthy(obj); // true
 testTruthy(obj.name); // true
 testTruthy(obj.age); // age (propriedade não existe)
+*/
+/*
+
+Funções dos operadores de igualdade (==e==)
+Os dois operadores de igualdade aceitos em JavaScript causam um pouco
+de confusão ao serem utilizados.
+Quando == é usado, os valores poderão ser considerados iguais mesmo 
+se forem diferentes. Vamos analisar como == funciona abaixo:
+*/
+alert ('E vamos que vamos');
 
