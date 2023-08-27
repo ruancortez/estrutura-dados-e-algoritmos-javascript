@@ -215,6 +215,81 @@ de confusão ao serem utilizados.
 Quando == é usado, os valores poderão ser considerados iguais mesmo 
 se forem diferentes. Vamos analisar como == funciona abaixo:
 */
-alert ('E vamos que vamos');
+/*
+    Type(x)         |   Type(y)     |   Resultado
+    null                undefined       true
+    undefined           null            true
+    Number              String          x == toNumber(y)
+    String              Number          toNumber(x) == y
+    Boolean             AnalyserNode    toNumber(x) == y
+    AnalyserNode        Boolean         x == toNumber(y)
+    String ou Number    Object         x == toPrimitive(x) == y
+*/
+/*
+Se x e y forem do mesmo tipo, então JavaScript usará o método equals
+para comparar os dois valores ou objetos. Qualquer outra combinação
+não listada na tabela resultará em false.
+Os métodos toNumber e toPrimitive são internos e avaliam os valores
+de acordo com as tabelas a seguir.
+Método toNumber:
+
+    Tipo de valor   |       Resultado
+    undefined               É NaN
+    null                    É +0
+    Boolean                 Se o valor for true, o resultado será 1,
+                            se o valor for false, o resultado será +0
+    Number                  É o valor do número
+    
+Por fim, temos o método toPrimitive:
+Tipo do valor   |           Resultado
+Object              Se valueOf devolver um valor primitivo, esse valor
+                    primitivo seŕa devolvido; caso contrário, se toString
+                    devolver um valor primitivo, esse valor será devolvido;
+                    senão, um erro será devolvido.
+
+Vamos observar o resultado de alguns exemolos. Inicialmente, sabemos que a
+saída do código a seguir é true(tamanho da string > 1): */
+
+/*    console.log('packt' ? true : false);*/
+/*
+Mas e o código seguinte?*/
+
+/*    console.log('packt' == true);
+
+A saída é false, vamos entender.
+* Inicialmente, o valor booleano é convertido com toNumber, portanto temos
+packt == 1.
+* Em seguida, o valor de string é convertido com toNumber. Como a string é
+constituída de caracteres alfabéticos, NaN será devolvido, portanto temos
+NaN == 1, que é falso.
+E o que dizer do código a seguir? 
+    console.log('packt' == false);*/
+/*
+A saída também é false, e os motivos são estes:
+* Inicialmente, o valor booleano é convertido com toNumber, portanto temos
+packt == 0.
+* Em seguida, o valor de string é convertido com toNumber. Como a string é
+constituída de caracteres alfabéticos, NaN será devolvido, portanto temos
+NaN == 0, que é falso.
+
+E quanto ao operador ===? Esse é muito mais simples. Se tivermos comparando
+dois valores de tipos diferentes, o resultado será sempre false. Se forem do 
+mesmo tipo, eles serão comparados de acordo com a tabela a seguir:
+
+Type(x)     |                   Valores                      |       Resultado
+Number          x tem o mesmo valor que y (mas nãoé NaN)                true
+String          x e y têm caracteres idênticos                          true
+Boolean         x e y são ambos true ou são ambos false                 true
+Object          x e y referenciam o mesmo objeto                        true
+
+Se x e y forem de tipos diferentes, o resultado seŕa false. Vamos considerar 
+alguns exemplos.*/
+
+    //console.log('packt' === true); //false
+    //console.log('packt' === 'packt');//false
+    //var person1 = {name: 'John'};
+    //var person2 = {name: 'John'};
+    //console.log(person1 === person2);//false, objetos diferentes
+/*alert ('E vamos que vamos');*/
 
 
