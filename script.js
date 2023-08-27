@@ -217,3 +217,4 @@ se forem diferentes. Vamos analisar como == funciona abaixo:
 */
 alert ('E vamos que vamos');
 
+
