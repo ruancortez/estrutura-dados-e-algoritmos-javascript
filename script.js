@@ -320,6 +320,36 @@ false(else), assim:
 */
 /* A instrução if...else também pode ser representada por um operador ternário.
 Por exemplo, observe a instrução if...else a seguir:
+/*      
+       if (num === 1) {
+        num--;
+       } else {
+        num++;
+       }
+
+Essa instrução também pode ser representada assim:
+       (num === 1) ? num-- : num++;*/
+/*
+Além do mais, se tivermos várias expressões, podemos usar if...else diversas
+vezes para executar blocos de códigos diferentes, de acordo com condições 
+distintas, assim: */
+
+       var month = 6;
+       if (month === 1) {
+        console.log('January');
+       } else if (month === 2) {
+        console.log('February');
+       } else if (month === 3) {
+        console.log('March');
+       } else if (month === 4) {
+        console.log('April');
+       } else if (month === 5) {
+        console.log('May');
+       } else {
+        console.log('Month is not January, February, March, April or May.');
+       }
+
+
 /*alert ('E vamos que vamos');*/
 
 
