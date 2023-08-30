@@ -332,7 +332,7 @@ Essa instrução também pode ser representada assim:
 /*
 Além do mais, se tivermos várias expressões, podemos usar if...else diversas
 vezes para executar blocos de códigos diferentes, de acordo com condições 
-distintas, assim: */
+distintas, assim: 
 
        var month = 6;
        if (month === 1) {
@@ -348,6 +348,38 @@ distintas, assim: */
        } else {
         console.log('Month is not January, February, March, April or May.');
        }
+*/
+/*
+Por fim temos a instrução switch. Se a condição que estivermos analisando for a 
+mesma que a anterior (porém a comparação é feita com valores diferentes), podemos
+usar a instrução switch:
+       var month = 5;
+       switch (month) {
+        case 1:
+            console.log('January');
+            break;
+        case 2:
+            console.log('February');
+            break;
+        case 3:
+            console.log('March');
+            break;
+        case 4:
+            console.log('April');
+            break;
+        default:
+            console.log('Month is not January, February, March or April.');
+
+       }*/
+/*
+Um aspecto muito importante em uma instrução switch é o uso de palavras 
+reservadas case e break. A cláusula case determina se o valor de switch é igual
+ao valor da cláusula case. A instrução break impede que a situação switch execute 
+o restante da instrução (caso contrário, todos os scripts de todas as cláusulas
+case depois daquela com a qual uma correspondência foi feita seriam executados, até
+que uma instrução break fosse encontrada em uma das cláusulas case). Por FileSystem,
+temos a instrução default, executada por padrão caso nenhuma das instruções case
+seja true (ou se a instrução case executada não tiver uma instrução break).*/
 
 
 /*alert ('E vamos que vamos');*/
