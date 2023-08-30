@@ -290,6 +290,36 @@ alguns exemplos.*/
     //var person1 = {name: 'John'};
     //var person2 = {name: 'John'};
     //console.log(person1 === person2);//false, objetos diferentes
+/*
+Estruturas de controle:
+A linguagem JavaScript tem um conjunto de estruturas de controle semelhante
+ao das linguagens C e Java. Instruções condicionais são tratadas com if, else
+e switch. Laços são tratados com as construções while, do while e for.
+
+Instruções condicionais:
+A primeira instrução condicional que analisaremos é a construção if...else. Há
+algumas maneiras de usar essa construção.
+Podemos usar a instrução if se quisermos executar um bloco de código somente
+se a condição(expressão) for true, deste modo:*/
+/*    var num = 1;
+    if (num === 1) {
+        console.log('num is equal to 1');
+       }*/
+
+/*
+Podemos usar a isntrução if...else se quisermos executar um bloco de código
+e a condição for true, ou outro bloco de código, somente caso a condição seja
+false(else), assim:
+
+       var num = 0;
+       if (num === 1) {
+        console.log('num is equal to 1');
+       } else {
+        console.log('num is not equal to 1, the value of num is ' + num);
+       }
+*/
+/* A instrução if...else também pode ser representada por um operador ternário.
+Por exemplo, observe a instrução if...else a seguir:
 /*alert ('E vamos que vamos');*/
 
 
